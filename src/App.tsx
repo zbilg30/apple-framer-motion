@@ -14,7 +14,6 @@ const App = () => {
           <Usps />
         </div>
         <VideoCarousel />
-        <div className="h-[300vh]"></div>
       </main>
     </>
   );
