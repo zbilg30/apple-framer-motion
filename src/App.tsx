@@ -1,5 +1,7 @@
-import { Container } from "./components/container";
 import { Header } from "./components/header";
+import { Hero } from "./components/section/hero";
+import { Usps } from "./components/section/usps";
+import { VideoCarousel } from "./components/section/video-carousel";
 import "./styles.css";
 
 const App = () => {
@@ -7,15 +9,12 @@ const App = () => {
     <>
       <Header />
       <main>
-        <div className="h-[300vh]">
-          <Container>Hero</Container>
+        <div className="relative z-10 bg-background">
+          <Hero />
+          <Usps />
         </div>
-        <div>
-          <Container>usps</Container>
-        </div>
-        <div>
-          <Container>3 col layout</Container>
-        </div>
+        <VideoCarousel />
+        <div className="h-[300vh]"></div>
       </main>
     </>
   );
